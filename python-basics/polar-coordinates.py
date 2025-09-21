@@ -6,5 +6,5 @@
 import cmath
 
 z = complex(input().strip())
-print(abs(z))         # magnitude
-print(cmath.phase(z)) # phase angle
+print(abs(z))  # magnitude
+print(cmath.phase(z))  # phase angle

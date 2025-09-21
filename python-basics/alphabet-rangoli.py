@@ -24,37 +24,39 @@
 # Time Complexity: O(N^2) - nested loops to build each row.
 # Space Complexity: O(N^2) - storing and printing rows.
 
+
 def print_rangoli(size):
-    startValue = 97  
-    width = (4 * size) - 3 
-    height = (2 * size) - 1 
+    startValue = 97
+    width = (4 * size) - 3
+    height = (2 * size) - 1
 
     for i in range(size - 1, 0, -1):
         row = ""
-        
+
         for j in range(size - 1, i, -1):
             row += chr(startValue + j) + "-"
-        
+
         for j in range(i, size):
             row += chr(startValue + j)
             if j != size - 1:
                 row += "-"
-        
-        print(row.center(width, "-"))
-        
-    for i in range(size):
-        row = ""
-        
-        for j in range(size - 1, i, -1):
-            row += chr(startValue + j) + "-"
-        
-        for j in range(i, size):
-            row += chr(startValue + j)
-            if j != size - 1:
-                row += "-"
-        
+
         print(row.center(width, "-"))
 
-if __name__ == '__main__':
+    for i in range(size):
+        row = ""
+
+        for j in range(size - 1, i, -1):
+            row += chr(startValue + j) + "-"
+
+        for j in range(i, size):
+            row += chr(startValue + j)
+            if j != size - 1:
+                row += "-"
+
+        print(row.center(width, "-"))
+
+
+if __name__ == "__main__":
     n = int(input().strip())
     print_rangoli(n)

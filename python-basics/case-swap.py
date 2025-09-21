@@ -15,8 +15,9 @@
 # Time Complexity: O(n) - We iterate over each character once.
 # Space Complexity: O(1) - Only a few helper variables are used.
 
+
 def swap_case(s):
-    a = ''
+    a = ""
     for ch in s:
         ch = ch.lower() if ch.isupper() else ch.upper()
         a = a + ch

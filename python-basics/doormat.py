@@ -1,15 +1,15 @@
 # Problem: HackerRank Designer Door Mat
-# 
+#
 # Explanation:
 # You are given the size of a door mat with dimensions N x M (N rows and M columns).
 # N is an odd natural number, and M is 3 times N.
-# 
+#
 # The design rules are:
 # 1. The pattern is built using "|." and "-" characters, and the word "WELCOME".
 # 2. The top half of the mat has patterns with increasing "|." count.
 # 3. The middle line contains "WELCOME" centered.
 # 4. The bottom half mirrors the top half.
-# 
+#
 # Example:
 # Input: 7 21
 # Output:
@@ -28,6 +28,7 @@
 #
 # Time Complexity: O(N)  - We loop through rows once.
 # Space Complexity: O(1) - Only a few helper variables used.
+
 
 def solve():
     N, M = map(int, input().split())

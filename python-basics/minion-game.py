@@ -13,6 +13,7 @@
 #   Kevin gets points for substrings starting with A, A, A = 9
 #   Stuart wins.
 
+
 def minion_game(string):
     vowels = "AEIOU"
     kevin = stuart = 0
@@ -30,9 +31,8 @@ def minion_game(string):
         print(f"Stuart {stuart}")
     else:
         print("Draw")
-    
-    
-    
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     s = input()
     minion_game(s)
